@@ -1,3 +1,11 @@
 <h1>Edit</h1>
 
-{{message}}
+<form ng-submit="updateSword()">
+  <label for="editSword">Edit Sword: </label>
+    <input type="text" name="editSword" ng-model="sword.swordName"></label><br>
+  <label for="swordOwner">Edit Owner: </label>
+    <input type="text" name="editOwner" ng-model="sword.swordOwner"></label><br>
+  <input type="submit" value="Update Sword"></input>
+</form>
+
+<button ng-click="deleteSword(sword)">Delete Sword</button>

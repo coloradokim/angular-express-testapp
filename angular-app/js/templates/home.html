@@ -1,3 +1,8 @@
-<h1>Home</h1>
+<div ng-repeat="sword in swords">
+    <span>{{sword}}</span>
+    <span>{{sword.swordOwner}}</span>
+</div>
 
-{{message}}
+
+<a href="/#/new"><button>Add a new sword</button></a>
+<a ng-href="/#/{{sword._id}}"><span>{{sword.swordName}}</span></a>
